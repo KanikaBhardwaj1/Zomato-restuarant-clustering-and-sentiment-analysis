@@ -1,58 +1,42 @@
-# Zomato-restuarant-clustering-and-sentiment-analysis
+## Zomato Restaurant Clustering And Sentiment Analysis
 
-📖 Naive Bayes
-In machine learning, naive Bayes classifiers are a family of simple "probabilistic classifiers" based on applying Bayes' theorem with strong (naive) independence assumptions between the features. Abstractly, naive Bayes is a conditional probability model: given a problem instance to be classified, represented by a vector Formula 1
+These project is part of the “Machine Learning &Advanced Machine Learning” curriculum as capstone projects at AlmaBetter.
 
-representing some n features (independent variables), it assigns to this instance probabilities Formula 2
+-- Project Status: [Completed]
 
-The problem with the above formulation is that if the number of features n is large or if a feature can take on a large number of values, then basing such a model on probability tables is infeasible. We therefore reformulate the model to make it more tractable. Using Bayes' theorem, the conditional probability can be decomposed as Formula 3
+Objective
+India is quite famous for its diverse multi cuisine available in a large number of restaurants and hotel resorts, which is reminiscent of unity in diversity. The Project focuses on Customers and Company, we have to analysed the sentiments of the reviews given by the customer and made some useful conclusion in the form of Visualizations. Also, clustered the zomato restaurants into different segments.
 
------------------------------------------------------
+Methods Used
+Descriptive Statistics
+Data Visualization
+Machine Learning -Supervised-Learning -Unsupervised-Learning
+Technologies
+Python
+Pandas
+Numpy
+Matplotlib
+Seaborn
+Scikit-learn
+NLP
+Data
+The Zomato-Restaurants dataset comprises of 2 files. "Zomato restaurant reviews" has Name of the Restaurant, Name of the customer, their review, rating, follower details, Time of Review and number of photos uploaded along with the review. This data has been mainly used for Sentiment analysis. "Zomato Restaurant names and Metadata" has the details of Name of the Restaurant, Link to order on their restaurant on zomato, Average cost, Tags for the restaurants, Cuisines and timings. This data has been mainly used for clustering.
 
-📋 Execution Instruction
-The order of execution of the program files is as follows:
+# Project Description
+EDA - Performed exploratory data analysis and text preprocessing
+Data Cleaning - We have to drop the entire feature as there are 50% null values.
+Feature Selection - For sentiment analysis, we have used rating and reviews features. - For clustering we got cost, cuisine and timing of the restaurant as the features to build the model.
+Model development - For sentiment analysis, developed different models like:- Multinomial NB, Logistic regression, Random forest classifier - For clustering the restaurants we have used the k-means and hirerchical clustering
+Needs of this project
+data exploration
+data processing/cleaning
+text preprocessing/cleaning
+sentiment analysis on reviews
+cluster the restaurant into different segments.
 
-1) spam_detector.py
+# Sentiment analysis
+-Plotted the distribution of ratings to have an understanding of the proportion of good and bad reviews. -Made many visualizations which include, top 10/bottom 10 restaurants in terms of average rating. -Had a clear understanding of the cost summary of the restaurants. -Done pre-processing such as removing emojis, punctuations and only used Adjectives and verbs to reduce dimensionality. -TF-IDF vectorizer was used to transform the dataset -Built several models such as Multinomial NB, Logistic regression, Random forest classifier etc.
 
-First, the spam_detector.py file must be executed to define all the functions and variables required for classification operations.
-
-2) train.py
-
-Then, the train.py file must be executed, which leads to the production of the model.txt file. At the beginning of this file, the spam_detector has been imported so that the functions defined in it can be used.
-
-3) test.py
-
-Finally, the test.py file must be executed to create the result.txt and evaluation.txt files. Just like the train.py file, at the beginning of this file, the spam_detector has been imported so that the functions defined in it can be used.
-
------------------------------------------------------
-
-📜 Credits
-< Your Name > | Avid Learner | Data Scientist | Machine Learning Engineer | Deep Learning enthusiast
-
-Contact me for Data Science Project Collaborations
-
-LinkedIn Badge GitHub Badge Medium Badge Resume Badge
-
------------------------------------------------------
-
-📚 References
-Jonathan Lee, 'Notes on Naive Bayes Classifiers for Spam Filtering'. [Online].
-
-Available: https://courses.cs.washington.edu/courses/cse312/18sp/lectures/naive-bayes/naivebayesnotes.pdf
-
-Wikipedia.org, 'Naive Bayes Classifier'. [Online].
-
-Available: https://en.wikipedia.org/wiki/Naive_Bayes_classifier
-
-Youtube.com, 'Naive Bayes for Spam Detection'. [Online].
-
-Available: https://www.youtube.com/watch?v=8aZNAmWKGfs
-
-Youtube.com, 'Text Classification Using Naive Bayes'. [Online].
-
-Available: https://www.youtube.com/watch?v=EGKeC2S44Rs
-
-Manisha-sirsat.blogspot.com, 'What is Confusion Matrix and Advanced Classification Metrics?'. [Online].
-
-Available: https://manisha-sirsat.blogspot.com/2019/04/confusion-matrix.html
+# Clustering
+-Calculated the time each Restaurant was opened weekly. -Did the pre-processing, Clubbed some cuisines together so that one-hot encoding would be possible. -Removed the unwanted variables and Normalized the data. -Clustered the data using K-means as well as Hierarchical clustering.
 
