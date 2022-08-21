@@ -31,11 +31,11 @@ Feature Selection - For sentiment analysis, we have used rating and reviews feat
 Model development - For sentiment analysis, developed different models like:- Multinomial NB, Logistic regression, Random forest classifier - For clustering the restaurants we have used the k-means and hirerchical clustering
 
 # Needs of this project
-data exploration
-data processing/cleaning
-text preprocessing/cleaning
-sentiment analysis on reviews
-cluster the restaurant into different segments.
+Data exploration
+Data processing/cleaning
+Text preprocessing/cleaning
+Sentiment analysis on reviews
+Cluster the restaurant into different segments.
 
 # Sentiment analysis
 -Plotted the distribution of ratings to have an understanding of the proportion of good and bad reviews. -Made many visualizations which include, top 10/bottom 10 restaurants in terms of average rating. -Had a clear understanding of the cost summary of the restaurants. -Done pre-processing such as removing emojis, punctuations and only used Adjectives and verbs to reduce dimensionality. -TF-IDF vectorizer was used to transform the dataset -Built several models such as Multinomial NB, Logistic regression, Random forest classifier etc.
